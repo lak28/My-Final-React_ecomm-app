@@ -1,0 +1,25 @@
+.home {
+    padding: 75px;
+}
+
+.lead {
+    font-size: 35px;
+    line-height: 30px;
+}
+
+p {
+    font-size: 50px;
+    line-height: 65px;
+}
+
+h1 {
+    font-size: 150px;
+}
+
+.contact {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding: 0px 12px;
+    font-weight: 300;
+}
