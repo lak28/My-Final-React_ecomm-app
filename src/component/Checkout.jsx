@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 const Checkout = () => {
+    
+    //function to get products from cart using redux
     const state = useSelector((state)=> state.handleCart)
 
     var total = 0;
