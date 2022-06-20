@@ -7,18 +7,21 @@ import { addCart } from '../redux/action/index';
 import { NavLink } from 'react-router-dom';
 
 const Cart = () => {
+    // Products fetched using Redux
     const state = useSelector((state)=> state.handleCart)
     const dispatch = useDispatch()
 
+      //Function to delete product from cart page
     const delProduct = (product) =>{
         dispatch(delCart(product))
     }
 
+     //Function to add product in cart
     const addProduct = (product) => {
         dispatch(addCart(product))
     }
 
-
+ //Function to fetch the products
     const product = (product) =>{
         return(
 
@@ -43,6 +46,7 @@ const Cart = () => {
         )
     }
 
+    //function to return when cart is empty
     const emptyCart = ()=> {
         return(
             <div className="px-4 my-5 bg-light rounded-3 py-5">
@@ -55,6 +59,7 @@ const Cart = () => {
         )
     }
 
+    //function to proceed to checkout page
     const button = () =>{
         return(
             <div className="container">
