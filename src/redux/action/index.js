@@ -1,3 +1,5 @@
+//Redux action page
+
 // For Add Item to cart
 export const addCart = (product) => {
     return{
