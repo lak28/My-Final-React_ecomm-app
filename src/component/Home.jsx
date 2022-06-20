@@ -2,6 +2,7 @@ import React from 'react';
 
 function Home() {
   return (
+     {/* Html of home page */}
     <div style={{backgroundColor:"lightpink"}} className='home'>
             <h2 style={{fontWeight:"bolder",textAlign:"center"}} className="card-text">Hello, we are one of the best in the Market.
             <br></br>Grab the Special products 
