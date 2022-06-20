@@ -13,6 +13,7 @@ function App() {
   return (
     <>
     <Navbar />
+      {/* Routes to the functions */}
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route exact path="/products" element={<Products />} />
