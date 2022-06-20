@@ -1,7 +1,9 @@
+
+
 import Products from "../../component/Products";
 
 const cart = [];
-
+//function to handle cart page functionality
 const handleCart = (state = cart, action) =>{
     const product = action.payload;
     switch(action.type){
