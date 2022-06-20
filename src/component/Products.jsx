@@ -43,6 +43,7 @@ export default function Products() {
       }
     }, []);
 
+    //Function to handle product add to cart page
     const dispatch = useDispatch();
     const addProduct = (product) => {
       dispatch(addCart(product));
@@ -68,17 +69,7 @@ export default function Products() {
         )
     }
 
-//   function DeleteUser(id){
-  
-//       fetch(`https://fakestoreapi.com/products/${id}`,{
-//         method: 'DELETE',
-//       }).then((result)=>{
-//              result.json().then((resp)=>{
-//                 alert("Deleted");
-               
-//              })
-//       })
-//   }
+//function to show div to add details of new product to be added
 
 function newProduct(){
 if(showDiv==false){
@@ -88,7 +79,7 @@ if(showDiv==false){
 }
 }
 
-
+//Function to add a new product 
 function updateContact(event) {
     debugger
     event.preventDefault();
@@ -106,7 +97,7 @@ function updateContact(event) {
    alert("Product Added")
   }
 
-
+//Function to delete a product
 async function DeleteUser(id) {
     await fetch(`https://fakestoreapi.com/products/${id}`, { method: 'DELETE' });
     alert('Delete successful');
@@ -116,7 +107,7 @@ async function DeleteUser(id) {
  
 
 
-
+//functions to filter products according to categories in navbar 
 
     const filterProduct = (cat) => {
         const updateList = data.filter((x)=>x.category === cat);
@@ -139,6 +130,8 @@ async function DeleteUser(id) {
         }
     
       }
+    
+    //Html return function
     const ShowProducts = () => {
         return (
             <>
