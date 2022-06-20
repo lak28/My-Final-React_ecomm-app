@@ -46,7 +46,7 @@ const Checkout = () => {
                             <div className="row g-3">
                                 <div className="col-sm-6">
                                     <label for="firstName" className="form-label">First name</label>
-                                    <input type="text" className="form-control" id="firstName" placeholder="Inkra" value="" required="" />
+                                    <input type="text" className="form-control" id="firstName" placeholder="Lakshya" value="" required="" />
                                     <div className="invalid-feedback">
                                         Valid first name is required.
                                     </div>
@@ -54,7 +54,7 @@ const Checkout = () => {
 
                                 <div className="col-sm-6">
                                     <label for="lastName" className="form-label">Last name</label>
-                                    <input type="text" className="form-control" id="lastName" placeholder="Andini" value="" required="" />
+                                    <input type="text" className="form-control" id="lastName" placeholder="Arora" value="" required="" />
                                     <div className="invalid-feedback">
                                         Valid last name is required.
                                     </div>
@@ -62,7 +62,7 @@ const Checkout = () => {
 
                                 <div className="col-12">
                                     <label for="email" className="form-label">Email <span className="text-muted"></span></label>
-                                    <input type="email" className="form-control" id="email" placeholder="you@example.com" />
+                                    <input type="email" className="form-control" id="email" placeholder="abc@example.com" />
                                     <div className="invalid-feedback">
                                         Please enter a valid email address for shipping updates.
                                     </div>
@@ -70,7 +70,7 @@ const Checkout = () => {
 
                                 <div className="col-12">
                                     <label for="address" className="form-label">Address</label>
-                                    <input type="text" className="form-control" id="address" placeholder="7191 Cempaka St" required="" />
+                                    <input type="text" className="form-control" id="address" placeholder="New delhi" required="" />
                                     <div className="invalid-feedback">
                                         Please enter your shipping address.
                                     </div>
