@@ -1,3 +1,5 @@
+//redux store page
+
 import { createStore } from "redux";
 import rootReducers from "./reducer";
 
