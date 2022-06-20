@@ -17,8 +17,10 @@ export default function Product() {
   const[T,setT] =useState(true);
 
  
-
+//Products fetched using Redux
   const dispatch = useDispatch();
+  
+  //Function to add Product in cart page
   const addProduct = (product) => {
     debugger
     dispatch(addCart(product));
@@ -46,7 +48,7 @@ export default function Product() {
 
 
 
-
+//Function to show div to Update a product details
 function EditBox(product){
     if(showDiv===false){
    
@@ -57,7 +59,7 @@ function EditBox(product){
     }
 }
 
-
+//function to update the product
 function updateContact(event) {
   debugger
   event.preventDefault();
@@ -92,7 +94,7 @@ function updateContact(event) {
 }
 
 
-
+//function to show skeleton when page is loading the API
 
   const Loading = () => {
     return (
@@ -113,6 +115,8 @@ function updateContact(event) {
     );
   };
 
+
+//HTML view of product returned
   const ShowProduct = () => {
     return (
       <>
